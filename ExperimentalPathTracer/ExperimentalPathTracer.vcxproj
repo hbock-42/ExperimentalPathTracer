@@ -80,6 +80,7 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>G:\Dev\Library\SDL\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>NotSet</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -123,10 +124,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Sources\main.cpp" />
+    <ClCompile Include="Sources\Debug\Debug.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Sources\Geometry\Vector3.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Headers\Debug\Debug.hpp" />
     <ClInclude Include="Headers\EPT.hpp" />
     <ClInclude Include="Headers\Geometry\Vector3.hpp" />
   </ItemGroup>
